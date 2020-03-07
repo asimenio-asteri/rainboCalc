@@ -1,2 +1,6 @@
 # rainboCalc
 A calculator for whatever you need.
+## Details
+This is a project I made in favor of calculating everything you need with JavaScript.
+## Contact Info
+To request a new calculator, email me at daverainbowin@gmail.com with information pertaining to the formula.
