@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RainboCalc</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Rainbo Calc</h1>
+    <p>Welcome to the calculator of all... that is listed</p>
+    <h3>Quadratic equation solver</h3>
+    <label for="a">A in ax<sup>2</sup> + bx + c = 0</label> <br />
+    <input type="number" name="a" id="a" /> <br />
+    <label for="b">B in the formula</label> <br />
+    <input type="number" name="b" id="b" /> <br />
+    <label for="c">C in the formula</label> <br />
+    <input type="number" name="c" id="c" /> <br />
+    <p id="quadOut">x = ?, ?</p> <br />
+    <button onclick="solveQuad()">Solve</button>
+    <h3>Hypotenuse finder</h3>
+    <label for="legA">Side 1</label> <br />
+    <input type="number" name="legA" id="legA" /> <br />
+    <label for="legB">Side 2</label> <br />
+    <input type="number" name="legB" id="legB" /> <br />
+    <p id="legOut">hypotenuse = ? units</p>
+    <button onclick="findHippo()">Solve</button>
+  </body>
+</html>
