@@ -32,7 +32,20 @@
     <input type="number" name="distance" id="distance" /> <br />
     <p id="speedOut">speed = ? units/second</p>
     <button onclick="findSpeed()">Solve</button>
+    <h3>Synthetic divison</h3>
+    <label for="div">Divisor</label>
+    <input type="number" name="div" id="div" />
+    <p>Put the coefficients for the equation below, separated by commas ie. x^3-2x^2+10x becomes 1,-2,10,0 (0s must be added)</p>
+    <label for="eq">Equation</label>
+    <input type="text" name="eq" id="eq" />
+    <p id="divOut">x</p>
+    <button onclick="synthDiv()">Compute</button>
     <h2>Statistics</h2>
     <p>Here, you can see everything about your data set.</p>
+    <!-- <h2>Fast-Growing Hierarchy</h2>
+    <p>Warning: This might use a lot of your CPU. <br />It should be written as fy(x), and if you use omega, fomega(x)</p>
+    <label for="fgh">Function</label> <br />
+    <input type="text" name="fgh" id="fgh" />
+    <button onclick="fgh()">Calculate</button> -->
   </body>
 </html>

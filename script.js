@@ -1,6 +1,10 @@
-function getValue(id) {
+function getValue(id, num) {
   let temp = document.getElementById(id).value;
-  return Number(temp);
+  if (!num) {
+    return Number(temp);
+  } else if (num == "s") {
+    return temp;
+  }
 }
 function getTag(id) {
   return document.getElementById(id);
@@ -26,4 +30,31 @@ function findSpeed() {
 }
 function findMean() {
   
+}
+/* function fgh() {
+  let fgh = getValue("fgh", "s");
+  let omega = /omega/g.test(fgh);
+  let list = /(\d)+/g.exec(fgh);
+  list[0] = Number(list[0]);
+  list[1] = Number(list[1]);
+  fg(list[1], list[0], 1);
+}
+function fg(par, sub, nest) {
+  if (sub == 1 && nest == 1) {
+    console.log(par * 2);
+  }
+} */
+function synthDiv() {
+  let x = getValue("div","s");
+  let y = getValue("eq","s").split(",").map(x => Number(x));
+  console.log(y);
+  let z = [];
+  let w = 0;
+  let r = 0;
+  z.push(y[0]);
+  for (i = 1; i < y.length; i++) {
+    z.push(y[i] + z[i-1] * x);
+    w = z[i];
+  }
+  getTag("divOut").innerHTML = `${z}`;
 }
